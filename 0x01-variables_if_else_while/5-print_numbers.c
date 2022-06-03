@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Print 0123456789
+ * main - Print 0123456789
  * Return: Always 0 (Success)
  */
 
