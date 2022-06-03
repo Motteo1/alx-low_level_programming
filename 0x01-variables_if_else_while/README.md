@@ -8,4 +8,6 @@ if else and while statements and programs
 
 3-print_alphabets.c A program that prints the alphabet in lowecase and then in uppercase
 
+4-print_alphabt.c A program that prints the alphabet in lowercase except letters q and e
+
 
