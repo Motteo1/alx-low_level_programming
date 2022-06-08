@@ -21,7 +21,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf(", %lu" sum);
+		printf(", %lu", sum);
 	}
 
 	a_head = a / 1000000000; /* break larger num into 2 parts */
