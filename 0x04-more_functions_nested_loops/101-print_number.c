@@ -11,7 +11,7 @@ void print_number(int n)
 	int d = 1;
 	unsigned int x = n;
 	unsigned int y = n;
-	int c - 0;
+	int c = 0;
 
 	if (n == 0)
 	{
