@@ -35,7 +35,7 @@ void print_number(int n)
 	}
 	for (i = 1; i < c; i++)
 	{
-		d *= 10:
+		d *= 10;
 	}
 	for (i = 0; i < c; i++)
 	{
