@@ -24,11 +24,11 @@ void print_number(int n)
 			t_beg *= 10;
 		tens = t_beg / 10;
 
-		while (tens >= 10)
+		while (tens >= 1)
 		{
 			digit = positive / tens;
 			_putchar(digit + '0');
-			positive = (positive - (tens * digit));
+			positive = (positive - (tens * digits));
 			tens /= 10;
 		}
 	}
