@@ -36,7 +36,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			b = n2[j] - '0';
 		else
 			b = 0;
-		r[k] = (a + b + c) % 10 + '10';
+		r[k] = (a + b + c) % 10 + '0';
 		c = (a + b + c) / 10;
 	}
 	if (c == 1)
