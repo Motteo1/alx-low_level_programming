@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_number - print in integer, without using long, arrays or pointers
+ * print_number - print an integer, without using long, arrays, or pointers
  * @n: number to be printed
  */
 
 void print_number(int n)
 {
 	unsigned int tens, digit, positive = n;
-	double t_bet = 1;
+	double t_beg = 1;
 
 	if (n == 0)
 		_putchar('0');
