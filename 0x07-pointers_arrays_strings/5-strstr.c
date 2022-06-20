@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 	while (haystack[i] != '\0') /* iterate through haystack */
 	{
 		/* if a byte matches first char of needle */
-		/* iterate through needle until match ends */
+		/* interate through needle until match ends */
 		if (haystack[i] == needle[0])
 		{
 			x = i, j = 0;
@@ -36,5 +36,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		i++;
 	}
-	return (Null); /* No Match */
+	return (NULL); /* No Match */
 }
