@@ -3,8 +3,8 @@
 #include <stdbool.h> /* bool data type */
 
 /**
- * is_sum - iterate through each argv to test if it's a number
- * @argv: a argv
+ * is_num - iterate through each argv to test if it's a number
+ * @argvv: a argv
  * Return: true only if entire string is a number, false if not
  */
 
