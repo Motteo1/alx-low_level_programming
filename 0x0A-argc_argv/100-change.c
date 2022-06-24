@@ -6,7 +6,7 @@
  * main - prints the minimum number of coins for an amount of money
  * @argc: should count two arguments
  * @argv: arguments given should be program name and amount of money
- * Retun: leasr number of coins, 0 if negative amount, 1 if amount not given
+ * Return: leasr number of coins, 0 if negative amount, 1 if amount not given
  */
 
 int main(int argc, char *argv[])
@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	n = atoi(argv[1]);
 
 	coint += n / 25;
-	n = % 25;
-	coins += / 10;
+	n = n % 25;
+	coins += n / 10;
 	n = n % 10;
 	coins += n / 5;
 	n = n % 5;
