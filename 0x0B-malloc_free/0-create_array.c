@@ -18,15 +18,15 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	arr = malloc(sizeof(char) * size); /* allocate memory */
 
-	if (arr == NULL) /* validaye memory */
+	if (arr == NULL) /* validate memory */
 		return (NULL);
 
 	while (i < (int)size) /* set array values to char c */
 	{
-		*(arr + 1) = c;
+		*(arr + i) = c;
 		i++;
 	}
-	*(arr + 1) = '\0';
+	*(arr + i) = '\0';
 
 	return (arr);
 }
