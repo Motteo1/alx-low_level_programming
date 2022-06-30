@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-
 	for (mul1 = 1; mul1 < argc; mul1++)
 	{
 		for (mul2 = 0; argv[mul1][mul2] != '\0'; mul2++)
