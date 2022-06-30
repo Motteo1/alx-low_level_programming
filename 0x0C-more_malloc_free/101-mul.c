@@ -26,10 +26,10 @@ int find_len(char *str)
 
 /**
  * create_xarray - creates an array of chars and initializes it with
- * 		the character 'x'. adds a terminating null byte
+ * the character 'x'. adds a terminating null byte
  * @size: the size of the array to be initialized
  * Description: if there is insufficient space, the
- * 		function exists with a status of 98
+ * function exists with a status of 98
  * Return: a pointer to the array
  */
 
@@ -53,7 +53,7 @@ char *create_xarray(int size)
 
 /**
  * iterate_zeroes - iterates through a string of numbers containing
- * 			leading zeroes until it hits a non-zero number
+ * leading zeroes until it hits a non-zero number
  * @str: the string of numbers to be iterated through
  * Return: a pointer to the next non-zero element
  */
@@ -70,7 +70,7 @@ char *iterate_zeroes(char *str)
  * get_digit - converts a digit character to a corresponding int
  * @c: the character to be converted
  * Description: if c is a non-digit, the function
- * 		exits with a status of 98
+ * exits with a status of 98
  * Return: the converted int
  */
 
@@ -94,7 +94,7 @@ int get_digit(char c)
  * @digit: the single digit
  * @zeroes: the necessary number of leading zeroes
  * Description: if mult contains a non-digit, the function
- * 		exits with a status of 98
+ * exits with a status of 98
  */
 
 void get_prod(char *prod, char *mult, int digit, int zeroes)
@@ -118,7 +118,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		prod--;
 	}
 
-	for (; mult_len >= 0;mult_len--, mult--, prod--)
+	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
 		if (*mult < '0' || *mult > '9')
 		{
@@ -133,14 +133,14 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 	}
 
 	if (tens)
-		*prod = (tens % 10) +'0';
+		*prod = (tens % 10) + '0';
 }
 
 /**
  * add_nums - adds the buffer numbers stored in two string
- * @final_prod - the buffer storing the running final product
- * @next_prod - the next product to be added
- * @next_len - the length of next_prod
+ * @final_prod: the buffer storing the running final product
+ * @next_prod: the next product to be added
+ * @next_len: the length of next_prod
  */
 void add_nums(char *final_prod, char *next_prod, int next_len)
 {
@@ -180,10 +180,10 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 /**
  * main - multiples two positive numbers
- * @args: the number of arguments passed to the program
+ * @argv: the number of arguments passed to the program
  * @argc: an array of pointers to the arguments
  * Description: if the number of arguments is incorrect or one number
- * 		contains non-digits, the functions exists with a status of 98
+ * contains non-digits, the functions exists with a status of 98
  * Return: always 0
  */
 
@@ -212,7 +212,7 @@ int main(int argc, char *argv[])
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-	for (index = find_len(argv[2]) -1; index >= 0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);
