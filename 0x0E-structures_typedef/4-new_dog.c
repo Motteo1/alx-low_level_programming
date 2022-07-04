@@ -17,7 +17,7 @@ int len(char *str)
 }
 /**
  * strcpy - copies the string pointed to by src,
- * including the terminating vull bye (\0).
+ * including the terminating null byte (\0).
  * to the buffer pointed to by dest
  * @dest: copy source to this buffer
  * @src: this is the source to copy
@@ -38,7 +38,7 @@ char *strcpy(char *dest, char *src)
  * @owner: member
  * Return: initialized instance of struct dog
  */
-dog_t *new_dog(char *name. float age. char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog1;
 	char *copy_of_name;
@@ -50,7 +50,7 @@ dog_t *new_dog(char *name. float age. char *owner)
 
 	dog1->age = age;
 
-	/* make copies of struct member and validate, else free on error */
+	/* make copies of struct members and validate, else free on error */
 	/* set values of struct members to copies of arguments or set to NULL */
 	if (name != NULL)
 	{
