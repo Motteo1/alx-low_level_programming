@@ -7,7 +7,6 @@
  * @str: string
  * Return: length
  */
-
 int len(char *str)
 {
 	int i;
