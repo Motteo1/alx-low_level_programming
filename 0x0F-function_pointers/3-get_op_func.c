@@ -3,7 +3,7 @@
 
 /**
  * get_op_func - function to select correct operation function
- * @s: oparation given (+, *. -, /, %)
+ * @s: oparation given (+, *, -, /, %)
  * Return: pointer to correct oparation function (0-4)
  */
 
