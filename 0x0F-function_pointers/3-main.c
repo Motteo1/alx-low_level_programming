@@ -4,7 +4,7 @@
 
 /**
  * main - when user runs main
- * user should give two integers and an operator and 
+ * user should give two integers and an operator and
  * main will calculate the math via a function pointer.
  * prints sum, difference, product, dividend or remainder
  * @argc: argument counter
