@@ -13,7 +13,7 @@ main:
    push rbp
 
    mov rdi,fmt
-   mov rsi, msg
+   mov rsi,msg
    mov rax,0
    call printf
 
