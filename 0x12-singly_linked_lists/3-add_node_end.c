@@ -22,7 +22,7 @@ int _strlen(const char *str)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node, tmp; /* create new node */
+	list_t *new_node, *tmp; /* create new node */
 
 	if (str == NULL) /* validate input */
 		return (NULL);
@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str); /* set node value */
+	new_node->str = strdup(str); /* set node values */
 	new_node->len = _strlen(str);
 	new_node->next = NULL;
 
