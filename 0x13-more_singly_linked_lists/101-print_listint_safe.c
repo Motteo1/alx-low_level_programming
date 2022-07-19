@@ -14,7 +14,7 @@ int count_nodes_till_loop(const listint_t *head)
 
 	while (turtle != NULL && hare != NULL)
 	{
-		turtlr = turtle->next;
+		turtle = turtle->next;
 		hare = hare->next->next;
 		count++;
 
