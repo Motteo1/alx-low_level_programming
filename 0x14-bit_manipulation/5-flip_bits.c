@@ -3,13 +3,13 @@
 /**
  * flip_bits - determine how many bits to flip to get from one num to another
  * @n: number
- * @m: number 2
+ * @m: number2
  * Return: how many bits differ
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int diff_bits = 0;
-	unsigned long int differences;
+	unsigned long int difference;
 
 	/* Xor both nums to show bit 1 if different bits */
 	difference = n ^ m;
