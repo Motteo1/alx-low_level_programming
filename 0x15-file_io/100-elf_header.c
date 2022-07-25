@@ -18,7 +18,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf -Check if a file if an ELF file.
+ * check_elf - Check if a file if an ELF file.
  * @e_ident: a pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
@@ -100,10 +100,10 @@ void print_data(unsigned char *e_ident)
 		printf("none\n");
 		break;
 	case ELFDATA2LSB:
-		printf("2's compliment, little endian\n");
+		printf("2's complement, little endian\n");
 		break;
 	case ELFDATA2MSB:
-		printf("2's compliment, bif endian\n");
+		printf("2's complement, big endian\n");
 		break;
 	default:
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
@@ -116,7 +116,7 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf(" Version:                            %d",
+	printf("  Version:                           %d",
 		e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
@@ -150,16 +150,16 @@ void print_osabi(unsigned char *e_ident)
 		printf("UNIX - NetBSD\n");
 		break;
 	case ELFOSABI_LINUX:
-		printf("UNIX - LINUX\n");
+		printf("UNIX - Linux\n");
 		break;
-	case ELFOSABI _SOLARIS:
-		printf("UNIX - SOLARIS\n");
+	case ELFOSABI_SOLARIS:
+		printf("UNIX - Solaris\n");
 		break;
 	case ELFOSABI_IRIX:
 		printf("UNIX - IRIX\n");
 		break;
 	case ELFOSABI_FREEBSD:
-		printf("UNIX - FREEBSD\n");
+		printf("UNIX - FreeBSD\n");
 		break;
 	case ELFOSABI_TRU64:
 		printf("UNIX - TRU64\n");
@@ -209,7 +209,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 		printf("EXEC (Executable file)\n");
 		break;
 	case ET_DYN:
-		printf("DYN )Shared object file)\n");
+		printf("DYN (Shared object file)\n");
 		break;
 	case ET_CORE:
 		printf("CORE (Core file)\n");
@@ -280,14 +280,14 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	header = malloc(sizeof(ELF64_Ehdr));
+	header = malloc(sizeof(Elf64_Ehdr));
 	if (header == NULL)
 	{
 		close_elf(o);
 		dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 		exit(98);
 	}
-	r = read(o, header, sizeof(ELF64_Ehdr));
+	r = read(o, header, sizeof(Elf64_Ehdr));
 	if (r == -1)
 	{
 		free(header);
