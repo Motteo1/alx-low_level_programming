@@ -4,7 +4,11 @@
 ### Description of what each file shows:
 * lists.h - Header file with structure defined and function prototypes
 * files that start with:
+
 0. prints all the elements
+1. returns the number of elements in linked list
+2. adds a new node at the beginning
+3. adds a new node at the end
 
 
 ### Environment
