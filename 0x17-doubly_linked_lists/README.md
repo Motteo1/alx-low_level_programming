@@ -15,6 +15,8 @@
 7. inserts a new node at a given position
 8. deletes the node at index
 
+> Files 100-103 contain single lines of the answer to the questions asked
+
 ### Environment
 * Language: C
 * OS: Ubuntu 20.04
