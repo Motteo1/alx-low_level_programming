@@ -12,7 +12,8 @@
 4. frees linked list
 5. returns the nth node
 6. returns the sum of all the data in list
-7. 
+7. inserts a new node at a given position
+8. 
 
 ### Environment
 * Language: C
