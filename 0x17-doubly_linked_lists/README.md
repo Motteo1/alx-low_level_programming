@@ -13,7 +13,7 @@
 5. returns the nth node
 6. returns the sum of all the data in list
 7. inserts a new node at a given position
-8. 
+8. deletes the node at index
 
 ### Environment
 * Language: C
