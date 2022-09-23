@@ -18,7 +18,7 @@ typedef struct hash_node_s
 	char *key;
 	char *value;
 	struct hash_node_s *next;
-} has_node_t;
+} hash_node_t;
 
 /**
  * struct hash_table_s - Hash table data structure
@@ -45,7 +45,7 @@ void hash_table_delete(hash_table_t *ht);
 
 /* structures and function prototypes for file 100 */
 /**
- * struct hash_node_s - Node of a sorted hash table
+ * struct shash_node_s - Node of a sorted hash table
  *
  * @key: The key, string
  * The key is unique in the HashTable
@@ -85,7 +85,7 @@ shash_table_t *shash_table_create(unsigned long int size);
 int shash_table_set(shash_table_t *ht, const char *key, const char *value);
 char *shash_table_get(const shash_table_t *ht, const char *key);
 void shash_table_print(const shash_table_t *ht);
-void shash_tables_print_rev(const shash_table_t *ht);
+void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash(shash_table_t *ht);
 
 #endif
