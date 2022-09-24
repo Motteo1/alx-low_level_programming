@@ -1,4 +1,4 @@
-### C- Has Tables
+### C- Hash Tables
 > Each file in this directory holds code illustrating creating hash tables and using them
 
 #### File Description:
@@ -21,4 +21,4 @@
 
 ***
 ### Authors
-Motteo1
+[Motteo1](https://github.com/Motteo1)
