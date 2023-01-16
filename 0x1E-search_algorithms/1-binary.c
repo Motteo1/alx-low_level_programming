@@ -25,7 +25,7 @@ void print_arr(int *array, size_t l, size_t r)
  * @array: given array of ints
  * @size: size of array
  * @value: value to search for
- * Return: index at which value is found
+ * Return: index at which value's found
  */
 int binary_search(int *array, size_t size, int value)
 {
@@ -38,14 +38,14 @@ int binary_search(int *array, size_t size, int value)
 
 	while (l <= r)
 	{
-		print_arr(array, 1, r);
-		mid = (1 + r) / 2;
+		print_arr(array, l, r);
+		mid = (l + r) / 2;
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)
 			r = mid - 1;
 		else
-			1 = mid + 1;
+			l = mid + 1;
 	}
 	return (-1);
 }
